@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+<section id="landing" class="page active">
+  <h1>Hey… I made something for you 💖</h1>
+  <button onclick="startApp()">Start</button>
+</section>
+
+<section id="progressPage" class="page">
+  <h2>Measuring your cuteness 😌</h2>
+  <div class="progress-container">
+    <div id="progressBar"></div>
+  </div>
+  <h3 id="percent">0%</h3>
+</section>
+
+<section id="puzzlePage" class="page">
+  <h2>Put this together 😏</h2>
+  <div id="puzzleBoard"></div>
+</section>
+
+<section id="questionPage" class="page">
+  <h2>Do you like me? ❤️</h2>
+  <button onclick="yesClicked()">Yes 💖</button>
+  <button id="noBtn" onmouseover="moveNo()">No 😅</button>
+</section>
+
+<section id="resultPage" class="page">
+  <h1>I like you too ❤️</h1>
+</section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
